@@ -1,0 +1,94 @@
+<nav class="navbar">
+    <div class="nav-wrapper">
+        <div class="logo-wrapper">
+            <img src="assets/ooredoo.png" alt="Logo">
+        </div>
+        <div class="user-wrapper">
+            <span>Username</span>
+            <svg class="svg-icon"
+                style="width: 30px; height: 30px;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M746.089 221.476q39.902 28.374 70.936 64.286t53.202 77.587 33.695 88.226 11.527 94.433q0 82.463-31.478 154.729t-85.123 125.911-125.911 85.123-154.729 31.478q-81.577 0-153.842-31.478t-126.355-85.123-85.123-125.911-31.034-154.729q0-46.995 11.084-92.216t31.478-86.01 50.542-76.256 67.389-63.842q19.507-14.187 42.118-10.64t36.798 22.168 10.64 41.675-22.168 37.241q-55.863 40.789-85.567 100.197t-29.705 127.685q0 58.522 22.168 110.394t60.739 90.442 90.443 61.182 110.394 22.611 110.394-22.611 90.442-61.182 61.182-90.443 22.611-110.394q0-69.163-31.921-130.788t-89.558-101.527q-19.507-13.3-23.497-36.355t9.31-42.562q13.3-18.621 36.355-22.611t42.562 9.31zM518.207 548.668q-23.055 0-39.458-16.404t-16.404-39.458l0-336.945q0-23.055 16.404-39.902t39.458-16.847q23.941 0 40.344 16.847t16.404 39.902l0 336.945q0 23.055-16.404 39.458t-40.344 16.403z" />
+            </svg>
+        </div>
+    </div>
+    <div class="navbar-action"></div>
+</nav>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <button>offre</button>
+        <button>Bouton 2</button>
+        <button>Bouton 3</button>
+        <button>Bouton 4</button>
+        <button>Bouton 5</button>
+        <button>Bouton 6</button>
+    </div>
+    
+    <div class="main-content">
+        <!-- Formulaire d'ajout d'une offre -->
+        <h1>Ajouter une offre</h1>
+        <div class="form-container">
+            <form action="/offres/add" method="POST">
+                <div class="form-group">
+                    <label for="offreName">Nom de l'offre :</label>
+                    <input type="text" id="offreName" name="offreName" required>
+                </div>
+                <div class="form-group">
+                    <label for="offreTmcode">TMcode de l'offre :</label>
+                    <input type="text" id="offreTmcode" name="offreTmcode" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="offreType">Type de l'offre :</label>
+                    <select id="offreType" name="offreType">
+                        <option value="PRE">PRE</option>
+                        <option value="POST">POST</option>
+                        <option value="CM">CM</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="annuler()">Annuler</button>
+                    <button type="submit">Valider</button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Tableau -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Offre ID</th>
+                    <th>Offre Name</th>
+                    <th>Offre Type</th>
+                    <th>Actif</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Offre 1</td>
+                    <td>PRE</td>
+                    <td>Oui</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Offre 2</td>
+                    <td>POST</td>
+                    <td>Non</td>
+                </tr>
+                <div class="add-button-container">
+                    <button class="add-button">
+                        <span class="add-icon">+</span> Ajouter
+                    </button>
+                </div>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+<footer>  -V1 2024-</footer>

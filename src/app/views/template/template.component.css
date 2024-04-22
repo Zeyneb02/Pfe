@@ -1,0 +1,203 @@
+/* Navbar styles */
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0;
+    border-radius: 25px;
+    position: fixed;
+}
+
+.nav-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 10px;
+}
+
+.navbar-action {
+    background-color: #ed1c24;
+    width: 100%;
+    height: 20px;
+    border-radius: 0 0 25px 25px;
+}
+
+.logo-wrapper img {
+    width: 150px;
+    object-fit: cover;
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-wrapper svg {
+    margin: 10px;
+    color: #ed1c24;
+    width: 50px;
+    cursor: pointer;
+}
+
+.user-wrapper span {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    color: #ed1c24;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 250px;
+    border-radius: 25px;
+    padding: 10px;  
+}
+
+.sidebar button {
+    width: 100%;
+    color: #5a5a5a;
+    background-color: white;
+    font-weight: 700;
+    border: none;
+    height: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.sidebar button:hover{
+    background-color: #ed1c24;
+    color: white;
+}
+
+/* Main content styles */
+.main-content {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+form div.form-group {
+    width: 100%;
+}
+
+form div.form-group:nth-child(odd) {
+    grid-column: span 1;
+}
+
+form div.form-group:nth-child(even) {
+    grid-column: span 1;
+}
+
+form div.form-group label,
+form div.form-group input,
+form div.form-group select {
+    width: 100%;
+}
+
+form div.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin-left: 10px;
+}
+
+/* Footer styles */
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    color: #5a5a5a;
+    font-size: 0.8rem;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Pour l'espace entre le bouton et le tableau */
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+.add-button-container {
+    display: flex;
+    justify-content: flex-end; /* Pour aligner le bouton à droite */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Pour l'espace entre le bouton et le tableau */
+}
+
+.add-button {
+    background-color: #ed1c24;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.add-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}

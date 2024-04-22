@@ -1,0 +1,90 @@
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 750px;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.image-wrapper{
+   
+    border-radius: 25px 0 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img{
+    width: 400px;
+    margin: 20px;
+}
+
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+
+
+.form-wrapper{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;  
+ 
+}
+
+.form-wrapper h1 {
+    font-size: 3rem;
+    color: #ed1c24;
+    font-weight: 400;
+    font-weight: 600;
+}
+
+.input-box{
+   margin: 5px;
+}
+
+input{
+    border: #5a5a5a 1px solid;
+    height: 45px;
+    width: 250px;
+    border-radius: 25px;
+    outline: none;
+    padding: 10px;
+}
+
+button{
+    background-color: #ed1c24;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    border: none;
+    width: 250px;
+    height: 45px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+
+
+hr{
+    background-color: #ed1c24;
+    border:2px #ed1c24 solid;
+    height: 95%;
+    border-radius: 20px;
+}
